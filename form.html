@@ -1,0 +1,83 @@
+  <!DOCTYPE html>
+<html>
+<head>
+  <title>Noda de Caju</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville|Nanum+Gothic" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+  <meta charset="utf-8">
+  </head>
+  <body>
+  <div class="cabecalho">
+    <header id="inicio">
+        <nav class="menu">
+          <ul>
+                
+                  <li><a href="form.html">Fale Conosco</a></li>
+                  <li><a href="cardapio.html">Cardápio</a></li>
+                  <li><a href="historia.html">Sobre Nós</a></li>
+                  <li><a href="index.html">Home</a></li>
+          </ul>
+          <img src="img/logoum.png">
+        </nav>
+    </header>
+  </div>
+  <div class="conteudo">
+  <div class="container">
+      <section class="column">
+        <h1 class="title">Fale Conosco</h1>
+        <div class="ctn-2">
+          
+           <center>
+              <p style="text-align: justify;">Em caso de dúvidas, sugestões ou elogios preencha o formulário. Não se esqueça de preencher corretamente todos os campos. 
+                Um xêro de toda a equipe Noda de Caju!
+              </p>
+            </center>
+        
+          <div>
+            <form class="form">
+              <h2 class="title">Enviar Mensagem</h2>
+              Nome: <input type="text" name="nome" value="" placeholder="Ex: Duda" /><br />
+              Email: <input type="text" name="email" value="" placeholder="Ex: email@example.com" /><br />
+              Telefone: <input type="text" class="phone_ddd" name="telefone" placeholder="(88) 99220-1089"
+                value="" /><br />
+              Mensagem:<br />
+              <textarea rows="4" cols="50"></textarea>
+              <br />
+              <div class="group-btn">
+                <input class="btn success" type="button" value="Enviar" />
+                <input class="btn danger" type="reset" value="Limpar" />
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+    
+ <div class="rodape-container">
+    <footer id="rodape">
+          <div class="conteudo-rodape">
+              <ul>
+                  <li><a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>NodadCaju</li>
+                  <li><a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>Noda de Caju Restaurante</li>
+                  <li><a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>OhNoda</li>
+                  <li>(88) 3214-1547</li>
+              </ul>
+          </div>
+    </footer>
+    <div class="criador">
+        <p>© Maria Eduarda Roxa Nobre</p>
+    </div>
+  </div>
+  <script type="text/javascript" src="jquery/jquery-2.2.4.min.js"></script>
+  <script type="text/javascript" src="jquery/jquery.mask.js"></script>
+  <script type="text/javascript" src="jquery/main.js"></script>
+  <script type="text/javascript">
+    $(".main-nav a").removeClass("selected");
+    $("#contato").addClass("selected");
+    $('.phone_ddd').mask('(00) 00000-0000');
+  </script>
+</body>
+</html>   
